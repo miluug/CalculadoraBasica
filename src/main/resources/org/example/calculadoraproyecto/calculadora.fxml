@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="479.0" style="-fx-border-radius: 20; -fx-background-color: #FFCCE5; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calculadoraproyecto.CalculadoraController">
+    <children>
+        <AnchorPane layoutX="21.0" layoutY="28.0" prefHeight="114.0" prefWidth="431.0" style="-fx-background-color: #919191; -fx-background-radius: 15;">
+            <children>
+                <TextField fx:id="resultado" layoutX="11.0" layoutY="42.0" prefHeight="74.0" prefWidth="408.0" style="-fx-background-color: #919191; -fx-font-size: 40;">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></TextField>
+            </children>
+        </AnchorPane>
+        <GridPane layoutX="22.0" layoutY="168.0" prefHeight="270.0" prefWidth="442.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="7" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="8" textFill="WHITE" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="9" textFill="WHITE" GridPane.columnIndex="2">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cocienteBtn" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #F786C3;" text="/" textFill="#bd3a85" GridPane.columnIndex="3">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="4" textFill="WHITE" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="5" textFill="#fffefe" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button fx:id="productoBtn" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #F786C3;" text="x" textFill="#bd3a85" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="1" textFill="WHITE" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="0" textFill="WHITE" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button layoutX="121.0" layoutY="144.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #C44F8F;" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button fx:id="adicionBtn" layoutX="232.0" layoutY="144.0" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #F786C3;" text="+" textFill="#bd3a85" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button fx:id="decimalBtn" layoutX="232.0" layoutY="144.0" mnemonicParsing="false" onAction="#onClearClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #FFC180;" text="C" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button fx:id="sustraccionBtn" layoutX="121.0" layoutY="212.0" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #F786C3;" text="-" textFill="#bd3a85" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+                <Button fx:id="resultadoBtn" layoutX="121.0" layoutY="212.0" mnemonicParsing="false" onAction="#onEqualsClick" prefHeight="51.0" prefWidth="90.0" style="-fx-background-color: #F786C3;" text="=" textFill="#bd3a85" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Arial Bold" size="28.0" />
+                    </font>
+                </Button>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

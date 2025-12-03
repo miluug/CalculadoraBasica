@@ -10,7 +10,7 @@ public class Calculadora extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxml = new FXMLLoader(getClass().getResource("calculadora.fxml"));
         Scene scene = new Scene(fxml.load());
-        stage.setTitle("Calculadora by Cam");
+        stage.setTitle("Calculator by Cam");
         stage.setScene(scene);
         stage.show();
     }
